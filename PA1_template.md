@@ -10,12 +10,7 @@ output:
 
 This R Markdown document performs and documents the analyses required for the Reproducible Research Peer Assessment 1.
 
-#Set Global Options
 
-```r
-knitr::opts_chunk$set(fig.width=12, fig.height=8, fig.path='Figs/',
-                      echo=TRUE, warning=FALSE, message=FALSE)
-```
 
 #Loading and preprocessing the data
 

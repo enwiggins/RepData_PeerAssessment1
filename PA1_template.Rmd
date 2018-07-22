@@ -10,8 +10,7 @@ output:
 
 This R Markdown document performs and documents the analyses required for the Reproducible Research Peer Assessment 1.
 
-#Set Global Options
-```{r global_options, include=TRUE}
+```{r global_options,include=FALSE}
 knitr::opts_chunk$set(fig.width=12, fig.height=8, fig.path='Figs/',
                       echo=TRUE, warning=FALSE, message=FALSE)
 ```
@@ -27,7 +26,7 @@ data1 <- read.csv("activity.csv")
 
 ##Make a histogram of the total number of steps taken each day
 
-```{r setoptions,results='asis'}
+```{r setoptions,echo=TRUE,results='asis'}
 library(ggplot2)
 library(plyr)
 data2 <- ddply(data1, .(date), summarise, stepsTotal = sum(steps, na.rm = TRUE))
